@@ -34,3 +34,12 @@ path
 ``` bash
  /SQL_BWV/SELECT/conf_cc.sql
  ```
+
+**Result**
+
+If the table created is blank, then there is no value to correct. Otherwise, the chart, journal, journal number and value will be displayed in the table.
+
+| Conta  | Descrição                        | Diário | NumDiário | Valor    | ContaOrigem | Descricao | Valor |
+|--------|----------------------------------|--------|-----------|----------|-------------|-----------|-------|
+| 624231 | Gás - aceite pela totalidade     | 41     | 50001     | 12.1200  | null        | null      | null  |
+| 6981   | Relativas a financiamentos obtidos| 41     | 50018     | 484.8600 | null       | null      | null  |
