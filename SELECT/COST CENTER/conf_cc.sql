@@ -14,8 +14,8 @@ FROM (
                 ELSE 0 
             END
     ) as Valor
-    FROM PRI98482ETERN.dbo.Movimentos m
-    JOIN PRI98482ETERN.dbo.PlanoContas pc ON m.conta = pc.conta
+    FROM PRI98482ABCDE.dbo.Movimentos m
+    JOIN PRI98482ABCDE.dbo.PlanoContas pc ON m.conta = pc.conta
     WHERE (m.Conta LIKE '6%' OR m.Conta LIKE '7%')
     	AND (m.Diario NOT LIKE '72')
         AND (m.Conta NOT LIKE '60%' AND m.Conta NOT LIKE '70%')
@@ -32,9 +32,9 @@ FULL OUTER JOIN (
                 ELSE 0 
             END
     ) as Valor
-    FROM PRI98482ETERN.dbo.PlanoCentros pc
-    JOIN PRI98482ETERN.dbo.Movimentos m ON pc.Centro = m.Conta 
-    JOIN PRI98482ETERN.dbo.PlanoContas pc2 ON m.ContaOrigem = pc2.Conta 
+    FROM PRI98482ABCDE.dbo.PlanoCentros pc
+    JOIN PRI98482ABCDE.dbo.Movimentos m ON pc.Centro = m.Conta 
+    JOIN PRI98482ABCDE.dbo.PlanoContas pc2 ON m.ContaOrigem = pc2.Conta 
     WHERE pc.TipoConta = 'M'
         AND pc.Ano = '2024'
         AND m.Ano = '2024'
