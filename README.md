@@ -7,10 +7,14 @@ Queries SQL of BWV Primavera to help office.
 
 **Documentation**
 
-´´´bash
+´´´
+bash
 /SELECT/DOC_iva_recap_intcom_tri.sql
 ´´´
+
 **SQL Query**
- ´´´bash
+
+ ´´´
+ bash
  /SELECT/iva_recap_intcom_tri.sql
  ´´´
