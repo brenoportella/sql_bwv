@@ -1,3 +1,10 @@
+-- ============================================
+-- Script: conf_cc.sql
+-- Descrição: Este script compara valores entre contas contábeis e centros de custos para o período especificado.
+-- Autor: Breno Portella
+-- Data: 23/07/2024
+-- ============================================
+
 SELECT *
 FROM (
     SELECT m.Conta, pc.descricao, m.diario, m.numdiario, SUM (
