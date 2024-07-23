@@ -19,6 +19,17 @@ path
  /SQL_BWV/SELECT/iva_recap_intcom_tri.sql
  ```
 
+**Result**
+
+The created table should be like this:
+
+| COMPANY       | TipoDoc | EspacoFiscal | Data       | Nome                          | NumContribuinte  | Documento     | TotalMerc | TotalDocumento | Diario | Observacoes                                                                 | Estado | NumDiario |
+|---------------|---------|--------------|------------|-------------------------------|------------------|---------------|-----------|----------------|--------|----------------------------------------------------------------------------|--------|-----------|
+| PRI98482ABCDE | FA      | 2            | 26/04/2024 | Company NAME | BP987654321 | FT FA.2024/5  | 6000.00  | 6000.00      |        | "Motivo: C02 - Alteração do diário/documento Utilizador: admin99"          | P      | 0         |
+| PRI98482ABCDE | FA      | 2            | 25/06/2024 | Company NAME | BP987654321 | FT FA.2024/7  | 7000.00   | 7000.00       |        | "Motivo: C02 - Alteração do diário/documento Utilizador: admin99"          | P      | 0         |
+| PRI98482ABCDE | FA      | 2            | 24/05/2024 | Company NAME | BP987654321 | FT FA.2024/6  | 5000.00   | 5000.00       |        | "Motivo: C02 - Alteração do diário/documento Utilizador: admin99"          | P      | 0         |
+
+
  ### Conferência Centro de Custos
  
  **Documentation**
